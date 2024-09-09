@@ -1,4 +1,4 @@
-### This repository is the star of the AirBnB clone project ###
+### This repository is the start of the AirBnB clone project ###
 
 The repository contains folders and files that have viable code
 for the making of the console that helps to manage and control objects
