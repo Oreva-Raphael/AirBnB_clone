@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """This is used for implementing different test cases"""
 
 import unittest
