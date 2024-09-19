@@ -30,7 +30,7 @@ class BaseModel:
     def save(self):
         """save the updated time when called"""
         self.updated_at = datetime.now()
-        models.storage.save(self)
+        models.storage.save()
 
     def to_dict(self):
         """return a dictionary containing key/value of instaces in the format:
