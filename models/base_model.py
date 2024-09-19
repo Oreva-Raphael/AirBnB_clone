@@ -25,11 +25,12 @@ class BaseModel:
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
 
-        models.storage.new(self)
+            models.storage.new(self)
 
     def save(self):
         """save the updated time when called"""
         self.updated_at = datetime.now()
+        models.storage.save(self)
 
     def to_dict(self):
         """return a dictionary containing key/value of instaces in the format:
