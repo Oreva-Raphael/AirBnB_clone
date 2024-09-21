@@ -3,7 +3,7 @@
 
 import cmd
 
-class HBNBCommand(cmd.cmd):
+class HBNBCommand(cmd.Cmd):
     """command line console"""
     prompt = "(hbnb)"
 
@@ -15,16 +15,18 @@ class HBNBCommand(cmd.cmd):
         """Implement the end of line fundtion\n"""
         return True
 
-    def help_quit(self, arg):
+    def help_quit(self):
         """Provide helpful doc on quit command"""
         print("quit: Quit the program just like exit")
 
-    def help_exit(self, arg):
+    def help_exit(self):
         print("exit: exit the program, just like quit")
 
     def emptyline(self):
         """called when an empty line is entered as an argument"""
         pass
+
+    do_exit = do_quit
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
