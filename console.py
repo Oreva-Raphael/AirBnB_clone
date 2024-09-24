@@ -96,7 +96,7 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 0:
             obj_items = models.storage.all()
         elif args[0] in valid_classes:
-            obj_items = models.stroage.all(valid_classes[args[0]])
+            obj_items = models.storage.all(valid_classes[args[0]])
         else:
             print("** class doesn't exist **")
             return False
